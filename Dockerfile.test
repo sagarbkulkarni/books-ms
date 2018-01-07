@@ -57,6 +57,6 @@ ENV DB_HOST localhost
 WORKDIR /source
 VOLUME ["/source", "/source/target/scala-2.10", "/root/.ivy2/cache", "/data/db"]
 
-CMD ["/source/run_tests.sh"]
+CMD ["bash /source/run_tests.sh"]
 
 EXPOSE 8080
